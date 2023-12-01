@@ -1,0 +1,23 @@
+1-package main
+
+import (
+	"fmt"
+	"math"
+)
+
+type Circulo struct {
+	raio float64
+}
+func main() {
+	var raio float64
+	fmt.Println("Informe o raio ")
+	fmt.Scan(&raio)
+	c := circulo{raio}
+	area := Calculo(c)
+	fmt.Println("A area é: ", area)
+}
+Calculo(circulo circulo) float64 {
+	return math.Pi * circulo.raio * circulo.raio
+}
+
+2-
